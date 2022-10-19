@@ -1,0 +1,27 @@
+
+You need to install rustup https://www.rust-lang.org/tools/install
+
+install rust version rustc 1.41.0 (5e1a79984 2020-01-27) with  > rustup default 1.41.0
+
+
+In order to make this project work you have to download transformers-2.11.0.zip modify setup.py as    "tokenizers == 0.10.0",
+
+then you need to install that transformers manually with install python setup.py install
+
+I have included that in the github repository
+
+
+
+For having cuda enabled torch you need to delete installed torchs and install them via
+
+https://pytorch.org/get-started/locally/
+
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+
+also you have to give a full path otherwise inference py will not work
+
+python inference.py --pretrained-model=roberta-large --weight-path=roberta-large-en.pt --language=en --in-file="C:\punctuation-restoration\data\test_en.txt" --out-file="C:\punctuation-restoration\data\test_fixed.txt"
+
+Please don't forget to subscribe our YouTube channel : https://www.youtube.com/SECourses
+
+I tested with Python 3.10.8 (tags/v3.10.8:aaaf517, Oct 11 2022, 16:50:30) [MSC v.1933 64 bit (AMD64)] on win32 and it works
