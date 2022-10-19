@@ -1,4 +1,6 @@
 
+Our Software Engineering YouTube channel : https://www.youtube.com/SECourses
+
 You need to install rustup https://www.rust-lang.org/tools/install
 
 install rust version rustc 1.41.0 (5e1a79984 2020-01-27) with  > rustup default 1.41.0
